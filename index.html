@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>免费领取投资书籍</title>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1927927997978394');
+    fbq('track', 'PageView');
+  </script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://images.unsplash.com/photo-1526378722484-cc5c6100f27b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      background-color: rgba(240, 244, 248, 0.8); /* fallback color */
+    }
+    h1 {
+      font-size: 2.2em;
+      color: #2c3e50;
+      margin-bottom: 0.5em;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+    p {
+      font-size: 1.1em;
+      color: #34495e;
+      margin-bottom: 1.5em;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      color: white;
+      background-color: #3498db;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+<h1>免费领取投资书籍！</h1>
+<p>添加WhatsApp，免费获取投资秘籍，助你轻松开启财富之路！</p>
+<button onclick="trackEventsAndRedirect()">立即领取</button>
+
+<script>
+  function trackEventsAndRedirect() {
+    fbq('track', 'AddToCart');
+    fbq('track', 'Lead');
+    setTimeout(function() {
+      window.location.href = "https://api.whatsapp.com/send/?phone=6281316193164&text=Halo, saya ingin mendapatkan sebuah buku investasi.";
+    }, 500);
+  }
+</script>
+
+</body>
+</html>
